@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../../assets/fonts/GlacialIndifference-Regular.otf');
+    src: url('../../assets/fonts/GlacialIndifference-Regular.otf?#iefix') format('embedded-opentype');
+    src: url('../../assets/fonts/GlacialIndifference-Regular.woff2') format('woff2'),
+    url('../../assets/fonts/GlacialIndifference-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../../assets/fonts/GlacialIndifference-Bold.otf');
+    src: url('../../assets/fonts/GlacialIndifference-Bold.otf?#iefix') format('embedded-opentype');
+    src: url('../../assets/fonts/GlacialIndifference-Bold.woff2') format('woff2'),
+    url('../../assets/fonts/GlacialIndifference-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;      
+}
+
+/* type variables */
+$glacial: 'Glacial Indifference';
+$headline-stack: $glacial, Helvetica, Arial;
+$body-stack: $glacial, Helvetica, Arial;
+$headline-rule: 2px;
+
+/* colors */
+$black: #181b31;
+$body-color: #636572;
+$button-color: #3d59e8;
+$headline-color: $black;
+$highlight-color-light: #dde1f8;
+$highlight-color-primary: #fe688b;
+$highlight-color-secondary: #60eacb;
+// $highlight-color-secondary-dark: #43A48E;
+$highlight-color-secondary-dark: #00a380;
+$highlight-color-tertiary: #f9b851;
+$link-color: $highlight-color-primary;
+$white: #ffffff;
+
+/* misc variables */
+$transition: all 0.5s ease-in-out;
+
+/* mixins */
+@mixin fancyLinkUnderline() {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: $highlight-color-primary;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: $transition;
+    }
+    &:not(&--active):hover {
+        &::after {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+    }
+}
+
+@mixin unstyledList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* keyframes */
+@keyframes growWide { from { width: 0; } to { width: 10rem; } }
