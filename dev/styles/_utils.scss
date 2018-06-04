@@ -41,7 +41,7 @@ $white: #ffffff;
 $transition: all 0.5s ease-in-out;
 
 /* mixins */
-@mixin fancyLinkUnderline() {
+@mixin fancyLinkUnderline($background-color) {
     &::after {
         content: "";
         position: absolute;
@@ -49,7 +49,7 @@ $transition: all 0.5s ease-in-out;
         height: 2px;
         bottom: -2px;
         left: 0;
-        background-color: $highlight-color-primary;
+        background-color: $background-color;
         visibility: hidden;
         transform: scaleX(0);
         transition: $transition;
@@ -69,4 +69,36 @@ $transition: all 0.5s ease-in-out;
 }
 
 /* keyframes */
-@keyframes growWide { from { width: 0; } to { width: 10rem; } }
+@keyframes growWide { from { width: 0; } to { width: 100px; } }
+@keyframes rotate {   from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(0);
+  } 
+}
+
+
+/* Generated with Bounce.js. Edit at https://goo.gl/RQznBy */
+
+@keyframes rotation { 
+  0% { transform: matrix3d(0.707, -0.707, 0, 0, 0.707, 0.707, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.2% { transform: matrix3d(0.931, -0.378, 0, 0, 0.543, 0.845, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% { transform: matrix3d(0.968, -0.273, 0, 0, 0.471, 0.888, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.41% { transform: matrix3d(1.001, -0.107, 0, 0, 0.333, 0.95, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.61% { transform: matrix3d(1.006, 0.013, 0, 0, 0.203, 0.985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.71% { transform: matrix3d(0.997, 0.112, 0, 0, 0.037, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.91% { transform: matrix3d(0.996, 0.113, 0, 0, 0.031, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% { transform: matrix3d(0.995, 0.109, 0, 0, -0.038, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.92% { transform: matrix3d(0.996, 0.094, 0, 0, -0.046, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% { transform: matrix3d(0.999, 0.033, 0, 0, -0.034, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.33% { transform: matrix3d(1, 0.012, 0, 0, -0.021, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  31.43% { transform: matrix3d(1, -0.001, 0, 0, -0.01, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% { transform: matrix3d(1, -0.008, 0, 0, 0.002, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  56.46% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% { transform: matrix3d(1, 0.001, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  81.48% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+

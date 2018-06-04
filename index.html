@@ -4,25 +4,50 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Jackie Lealess | Front-end developer</title>
+	<title>Jackie Lealess | Front-end developer</title>	
 	<script defer src='https://use.fontawesome.com/releases/v5.0.10/js/all.js' integrity='sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+' crossorigin='anonymous'></script>
-<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="public/styles/style.css">
+
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="assets/images/android-chrome-192x192.png" sizes="192x192">
+	<meta name="msapplication-square70x70logo" content="assets/images/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="assets/images/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="assets/images/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="assets/images/largetile.png" />
+
 </head>
 <body>
 	<div class="grid grid--primary">
 		<header class="header">
-			<h1 class="logo"><img src="assets/images/logo.png" alt="Jackie Lealess" /></h1>
-			<div class="wrapper">
+			<div class="header__top-row">
+				<div class="logo">
+					<a href="#">
+						<img src="assets/images/logo.svg" alt="Jackie Lealess" />
+					</a>
+				</div>
 				<nav class="main-nav">
 					<ul class="main-nav__list">
-						<li class="main-nav__list__item"><a data-scroll href="#">Home</a></li class="main-nav__list__item">
 						<li class="main-nav__list__item"><a data-scroll href="#about">About</a></li class="main-nav__list__item">
 						<li class="main-nav__list__item"><a data-scroll href="#portfolio">Portfolio</a></li class="main-nav__list__item">
-						<li class="main-nav__list__item"><a data-scroll href="#skills">Skills & Tools</a></li class="main-nav__list__item">
+						<li class="main-nav__list__item"><a data-scroll href="#skills">Skills<span class="hide-on-mobile"> & Tools</span></a></li class="main-nav__list__item">
 						<li class="main-nav__list__item"><a data-scroll href="#contact">Contact</a></li>
 					</ul>
 				</nav>
+			</div>
+			<div class="wrapper">
 				<section class="intro">
 					<h1 class="heading--primary">
 						<span class="intro__hello">Hello, I’m</span>
@@ -33,13 +58,24 @@
 			</div>
 		</header>
 		<main class="main">
-			<section id="about" class="section section--about section--highlight">
+			<section id="about" class="section section--about">
 				<div class="wrapper grid grid--2-up">
 					<div class="section--about__text">
 					<h2 class="section__heading">About</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum reiciendis veritatis! Eligendi incidunt dolorum ea molestiae beatae, ex adipisci doloremque? Enim voluptate eveniet nulla!</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quos repudiandae, tempora similique neque officiis suscipit error earum, laudantium illum omnis ex laboriosam deserunt! Facere?</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo enim, earum reprehenderit mollitia expedita fugiat debitis rem. Similique animi placeat dignissimos non natus velit.</p>
+						 <p>
+						 	Hi, I’m Jackie Lealess, a front-end developer based in Toronto. I’m a tenacious problem-solver with an eye for design and
+							a passion for accessibility and usability, and I’m working to make the web a more inclusive place one site at a time. I love
+							learning new skills and technologies to continuously improve my craft and to share what I’ve learned with my community.
+						 </p> 
+						 <p>
+						 	Although
+							I have been known to solve algorithms for fun, when I’m hunched over my keyboard I can be found exploring the city, listening
+							to comedy podcasts, watching a movie at one of the city’s rep cinemas, or spending time with my rescue cat.
+						 </p> 
+						 <p>
+						 	I’m currently
+							looking for opportunities both to contribute and to grow my diverse skillset, and I’m always up for an interesting challenge.
+						 </p>
 					</div>
 					<div class="section--about__image">
 						<img src="assets/images/jackie-2.jpg" alt="Jackie Lealess">
@@ -62,7 +98,7 @@
 						<h3 class="portfolio__item__text__heading">
 							React Interactive Site
 						</h3>
-						<p class="portfolio__item__text__description">We have a simple mission: to produce the highest quality work and services for every client, on every project.</p>
+						<p class="portfolio__item__text__description">The Grog Log is an interactive notebook designed to record visits to tiki bars, rate drinks, and search for beverages previously consumed.</p>
 						<ul class="portfolio__item__skills">
 							<li class="porfolio__item__skills__item">HTML</li>
 							<li class="porfolio__item__skills__item">CSS</li>
@@ -74,45 +110,23 @@
 						<ul class="portfolio__item__links">
 							<li>
 								<a class="button button--reverse" href="https://grog-log.firebaseapp.com/">View site</a>
+							</li>
+							<li>
 								<a class="button button--reverse" href="https://github.com/jlealess/grog-log">GitHub repo</a>
 							</li>
 					</div>
 				</div>
 				<div class="wrapper--bleed portfolio__item">
 					<div class="portfolio__item__img">
-						<a href="http://jackielealess.com/afterlife-placement-calculator">
-							<img src="assets/images/afterlife-placement-calculator-1400x900.jpg" alt="">
-						</a>
-					</div>
-					<div class="portfolio__item__text">
-						<h3 class="portfolio__item__text__heading">
-							jQuery Interactive Project
-						</h3>
-						<p class="portfolio__item__text__description">We have a simple mission: to produce the highest quality work and services for every client, on every project.</p>
-						<ul class="portfolio__item__skills">
-							<li class="porfolio__item__skills__item">HTML</li>
-							<li class="porfolio__item__skills__item">CSS</li>
-							<li class="porfolio__item__skills__item">JavaScript</li>
-							<li class="porfolio__item__skills__item">jQuery</li>
-						</ul>
-						<ul class="portfolio__item__links">
-							<li>
-								<a href="http://jackielealess.com/afterlife-placement-calculator" class="button button--reverse">View site</a>
-								<a href="https://github.com/jlealess/afterlife-placement-calculator" class="button button--reverse">GitHub repo</a>
-							</li>
-					</div>
-				</div>
-				<div class="wrapper--bleed portfolio__item">
-					<div class="portfolio__item__img">
 						<a href="https://supermysteryteam.github.io/on-the-case/">
-							<img src="assets/images/bonbanho-1400x900.jpg" alt="">
+							<img src="assets/images/bonbanho-1400x900.jpg" alt="Bonbanhos">
 						</a>
 					</div>
 					<div class="portfolio__item__text">
 						<h3 class="portfolio__item__text__heading">
 							API Web Application
 						</h3>
-						<p class="portfolio__item__text__description">We have a simple mission: to produce the highest quality work and services for every client, on every project.</p>
+						<p class="portfolio__item__text__description">Bonbanhos uses the Refuge and Google Maps APIs to help users find washrooms that are wheelchair accessible and/or gender inclusive.</p>
 						<ul class="portfolio__item__skills">
 							<li class="porfolio__item__skills__item">HTML</li>
 							<li class="porfolio__item__skills__item">CSS</li>
@@ -123,6 +137,8 @@
 						<ul class="portfolio__item__links">
 							<li>
 								<a href="https://supermysteryteam.github.io/on-the-case/" class="button button--reverse">View site</a>
+							</li>
+							<li>
 								<a href="https://github.com/supermysteryteam/on-the-case" class="button button--reverse">GitHub repo</a>
 							</li>
 						</ul>
@@ -130,15 +146,41 @@
 				</div>
 				<div class="wrapper--bleed portfolio__item">
 					<div class="portfolio__item__img">
+						<a href="http://jackielealess.com/afterlife-placement-calculator">
+							<img src="assets/images/afterlife-placement-calculator-1400x900.jpg" alt="Afterlife Placement Calculator">
+						</a>
+					</div>
+					<div class="portfolio__item__text">
+						<h3 class="portfolio__item__text__heading">
+							jQuery Interactive Project
+						</h3>
+						<p class="portfolio__item__text__description">Based on the TV show The Good Place, The Afterlife Placement Calculator is an interactive questionnaire designed to help the user determine whether their actions have earned them a ticket to the Good Place or to the Bad Place.</p>
+						<ul class="portfolio__item__skills">
+							<li class="porfolio__item__skills__item">HTML</li>
+							<li class="porfolio__item__skills__item">CSS</li>
+							<li class="porfolio__item__skills__item">JavaScript</li>
+							<li class="porfolio__item__skills__item">jQuery</li>
+						</ul>
+						<ul class="portfolio__item__links">
+							<li>
+								<a href="http://jackielealess.com/afterlife-placement-calculator" class="button button--reverse">View site</a>
+							</li>
+							<li>
+								<a href="https://github.com/jlealess/afterlife-placement-calculator" class="button button--reverse">GitHub repo</a>
+							</li>
+					</div>
+				</div>
+				<div class="wrapper--bleed portfolio__item">
+					<div class="portfolio__item__img">
 						<a href="https://jlealess.github.io/hy-project-2-simpleflex/">
-							<img src="assets/images/simpleflex-1400x900.jpg" alt="">
+							<img src="assets/images/simpleflex-1400x900.jpg" alt="Simpleflex">
 						</a>
 					</div>
 					<div class="portfolio__item__text">
 						<h3 class="portfolio__item__text__heading">
 							Responsive PSD Conversion
 						</h3>
-						<p class="portfolio__item__text__description">We have a simple mission: to produce the highest quality work and services for every client, on every project.</p>
+						<p class="portfolio__item__text__description">A responsive website based on the Simpleflex portfolio theme PSD.</p>
 						<ul class="portfolio__item__skills">
 							<li class="porfolio__item__skills__item">HTML</li>
 							<li class="porfolio__item__skills__item">CSS</li>
@@ -147,6 +189,8 @@
 						<ul class="portfolio__item__links">
 							<li>
 								<a href="https://jlealess.github.io/hy-project-2-simpleflex/" class="button button--reverse">View site</a>
+							</li>
+							<li>
 								<a href="https://github.com/jlealess/hy-project-2-simpleflex" class="button button--reverse">GitHub repo</a>
 							</li>
 						</ul>
@@ -165,7 +209,8 @@
 								<li>HTML5</li>
 								<li>CSS3</li>
 								<li>Sass</li>
-								<li>JavaScript & jQuery</li>
+								<li>JavaScript</li>
+								<li>jQuery</li>
 								<li>PHP</li>
 								<li>ReactJS</li>
 								<li>WordPress</li>
@@ -185,6 +230,7 @@
 								<li>Adobe Animate</li>
 								<li>Sketch</li>
 								<li>InVision</li>
+								<li>JIRA</li>
 							</ul>
 						</div>
 					</div>
@@ -196,7 +242,7 @@
 					<div class="grid-column--left">
 						<h2 class="section__heading section__heading--sidebar">Contact me</h2>
 						<p class="cta">Let’s make something amazing together! I’m excited to hear from you about new opportunities and projects.</p>
-						<p class="cta"><a class="cta__email" href="mailto:jlealess@gmail.com">jlealess@gmail.com</a></p>
+						<p class="cta"><a class="cta__email" href="mailto:hello@jackielealess.com">hello@jackielealess.com</a></p>
 						<ul class="social-icons">
 							<li class="social-icons__item">
 								<a href="https://www.linkedin.com/in/jlealess/">
@@ -247,7 +293,9 @@
 		<footer class="footer">
 			<div class="wrapper">
 			<p class="logo">
-				<img src="assets/images/logo.png" alt="Jackie Lealess" />
+				<a href="#" data-scroll>
+					<img src="assets/images/logo.svg" alt="Jackie Lealess" />
+				</a>
 			</p>
 				<p class="footer__copy">
 					&copy; 2018 Jackie Lealess
