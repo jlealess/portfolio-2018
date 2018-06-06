@@ -129,7 +129,13 @@ a:focus {
 
 	.logo {
 		padding: 0 0 0 20px;
+		transition: $transition;
 		width: 95px;
+
+		&:hover {
+			opacity: 0.8;
+			transform: translate(5px, 0);
+		}		
 
 		@media screen and (max-width: 500px) {
 			margin: 0 auto;
@@ -307,6 +313,12 @@ a:focus {
 					border-bottom: 1px solid $highlight-color-secondary;
 				}
 			}
+
+			textarea {
+				border-radius: 0;
+				resize: none;
+			}
+
 
 			label {
 				font-size: 1.4rem;
