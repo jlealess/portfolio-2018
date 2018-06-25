@@ -192,9 +192,14 @@ a:focus {
 
 	&__img {
 		max-width: 945px;
+		transition: $transition;
 
 		img {
 			width: 100%;
+		}
+
+		&:hover {
+			transform: scale(1.05);
 		}
 	}
 
